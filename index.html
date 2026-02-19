@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Countries Explorer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Countries Explorer</h1>
+
+<div class="top-controls">
+    <button id="themeToggle">🌙 Dark Mode</button>
+
+    <select id="sortSelect">
+        <option value="">Sort By</option>
+        <option value="az">Name A-Z</option>
+        <option value="za">Name Z-A</option>
+        <option value="popHigh">Population High-Low</option>
+        <option value="popLow">Population Low-High</option>
+    </select>
+</div>
+
+<div class="search-container">
+    <input type="text" id="searchName" placeholder="Search by country name">
+    <input type="text" id="searchCode" placeholder="Search by country code">
+    <input type="text" id="searchRegion" placeholder="Search by region/continent">
+    <input type="text" id="searchCapital" placeholder="Search by capital">
+</div>
+
+<div id="countriesList"></div>
+
+   <!-- Country Modal -->
+<div id="countryModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
+   
+   
+   
+   <script src="script.js"></script>
+</body>
+</html>
